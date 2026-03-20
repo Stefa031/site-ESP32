@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Eco Rover – Live Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Eco Rover – Live Data</h1>
+    <p>Date preluate direct de la ESP</p>
+</header>
+
+<section class="config">
+    <label>Adresa ESP (IP sau URL):</label>
+    <input type="text" id="espUrl" value="http://192.168.100.47/data">
+    <button onclick="saveEspUrl()">Salvează</button>
+</section>
+
+<section class="cards">
+    <div class="card">
+        <h2>PM2.5</h2>
+        <p><span id="pm25">--</span> µg/m³</p>
+    </div>
+    <div class="card">
+        <h2>Temperatură</h2>
+        <p><span id="temp">--</span> °C</p>
+    </div>
+    <div class="card">
+        <h2>Umiditate</h2>
+        <p><span id="hum">--</span> %</p>
+    </div>
+    <div class="card">
+        <h2>Presiune</h2>
+        <p><span id="press">--</span> hPa</p>
+    </div>
+</section>
+
+<section class="actions">
+    <button onclick="fetchData()">Actualizează acum</button>
+    <p id="status"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
