@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f3;
+    margin: 0;
+}
+
+header {
+    background: #2b7a78;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.config, .actions {
+    padding: 20px;
+    text-align: center;
+}
+
+.config input {
+    width: 260px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    width: 180px;
+    box-shadow: 0 0 8px #ccc;
+    text-align: center;
+}
+
+button {
+    padding: 8px 15px;
+    background: #2b7a78;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #205c5a;
+}
+
+#status {
+    font-size: 13px;
+    color: #555;
+    margin-top: 10px;
+}
